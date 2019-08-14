@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <customegrid_tab module="customegrid" translate="label">
+            <label>Order Grid</label>
+            <sort_order>100</sort_order>
+        </customegrid_tab>
+    </tabs>
+    <sections>
+        <customegrid_section module="customegrid" translate="label">
+            <label>Grid Settings</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>customegrid_tab</tab>
+            <groups>
+                <customegrid_group translate="label">
+                    <label>General</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+		                    <customer_email translate="label tooltip comment">
+                            <label>Customer Email</label>
+                            <sort_order>30</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <tooltip>Field ToolTip</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            </customer_email>
+
+
+		                    <city translate="label tooltip comment">
+                            <label>City</label>
+                            <sort_order>50</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <tooltip>Field ToolTip</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            </city>
+
+		                    <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>50</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <tooltip>Field ToolTip</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            </postcode>
+
+		                    <billing_name translate="label tooltip comment">
+                            <label>Billing Name</label>
+                            <sort_order>60</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <tooltip>Field ToolTip</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            </billing_name>
+
+		                    <sku translate="label tooltip comment">
+                            <label>Product Sku or Name</label>
+                            <sort_order>70</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <tooltip>Field ToolTip</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            </sku>
+
+
+
+
+				
+                    </fields>
+                </customegrid_group>
+            </groups>
+        </customegrid_section>
+    </sections>
+</config>

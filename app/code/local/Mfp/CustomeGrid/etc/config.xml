@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mfp_CustomeGrid>
+      <version>1.0.0</version>
+    </Mfp_CustomeGrid>
+  </modules>
+  <global>
+    <helpers>
+      <customegrid>
+        <class>Mfp_CustomeGrid_Helper</class>
+      </customegrid>
+    </helpers>
+	<!--<blocks>
+	  <customegrid>
+		<class>Mfp_CustomeGrid_Block</class>
+	  </customegrid>
+	</blocks>-->
+		<blocks>
+<adminhtml>
+<rewrite>
+<sales_order_grid>Mfp_CustomeGrid_Block_Adminhtml_Order_Grid</sales_order_grid>
+</rewrite>
+</adminhtml>
+</blocks>
+
+  </global>
+  <adminhtml>
+	<menu>
+	  <customegrid module="customegrid">
+		<title>Order Grid</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <customegridbackend module="customegrid">
+			<title>Settings</title>
+			<sort_order>0</sort_order>
+			<action>adminhtml/system_config/edit/section/customegrid_section</action>
+		  </customegridbackend>
+		</children>
+	  </customegrid>
+	</menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <customegrid_section translate="title" module="customegrid">
+                                        <title>customegrid</title>
+                                        <sort_order>100</sort_order>
+                                    </customegrid_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+	<layout>
+	  <updates>
+		<customegrid>
+		  <file>customegrid.xml</file>
+		</customegrid>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mfp_CustomeGrid</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Customizing your sales grids has never been easier before!</summary>
+    <description>This extension allows you to customize all sales grids Orders,</description>
+    <notes>Hide columns in sales grids - easily remove any column not required&#xD;
+</notes>
+    <authors><author><name>harpreet</name><user>princehar1987</user><email>harpreetsinghphp@gmail.com</email></author></authors>
+    <date>2015-09-23</date>
+    <time>17:22:59</time>
+    <contents><target name="magelocal"><dir name="Mfp"><dir name="CustomeGrid"><dir name="Block"><dir name="Adminhtml"><file name="CustomeGridbackend.php" hash="5dfde622f679b97742d06bcba30ab90e"/><dir name="Order"><file name="Grid.php" hash="abe3b5e61338765bd3e29a0131cf5279"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="5b7f49ccb618b2b362f5e289982c1c83"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CustomegridbackendController.php" hash="41d98b0418ef37a71eaf25c0ca8269e0"/></dir></dir><dir name="etc"><file name="config.xml" hash="833fffaee33f4e76c003825e1a07442a"/><file name="system.xml" hash="4023c7c49d1d94607f66d12b63717a43"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mfp_CustomeGrid.xml" hash="a50fccaa2a11cf7680bc6b7a90f87d58"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
